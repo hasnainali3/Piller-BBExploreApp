@@ -51,7 +51,7 @@ export default function App({ navigation }) {
             setCharacterList(result)
         }
         setShowFilter(false)
-    }, [])
+    }, [characterListCopy, setCharacterList, setShowFilter])
 
     const rightComponent = <TouchableOpacity onPress={() => setShowFilter(true)}>
         <Image source={require('../../../assets/images/filter.png')} style={styles.filterIcon} />
